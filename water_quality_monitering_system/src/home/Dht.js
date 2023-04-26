@@ -138,7 +138,7 @@ export class Dht extends Component {
           {this.state.currTemprature < 18 || this.state.currTemprature > 48 ? (
               <span
                 className={`${
-                  this.state.currTemprature < 18 ||
+                  this.state.currTemprature < 15 ||
                   this.state.currTemprature > 48
                     ? "wrong"
                     : ""
