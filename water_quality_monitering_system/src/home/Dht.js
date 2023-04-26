@@ -57,9 +57,6 @@ export class Dht extends Component {
         }
         humidity=+humidity;
         temprature=+temprature;
-        console.log("data", data);
-        console.log("humidity",humidity);
-        console.log("temprature",temprature);
         this.setState({ currHumidity: humidity });
         this.setState({ currTemprature: temprature });
       
@@ -110,14 +107,14 @@ export class Dht extends Component {
           current value of Humidity:{" "}
           <span
             className={`common_currvalue_value ${
-              this.state.currHumidity < 100 ? "wrong" : ""
+              this.state.currHumidity >100 ? "wrong" : ""
             }`}
           >
             {this.state.currHumidity}
           </span>
           <Fade>
-          {this.state.currHumidity < 100 ? (
-            <span className={`${this.state.currHumidity < 100 ? "wrong" : ""}`}>
+          {this.state.currHumidity > 100 ? (
+            <span className={`${this.state.currHumidity > 100 ? "wrong" : ""}`}>
               {" "}
               (something wrong please check your water supply)
             </span>
@@ -130,7 +127,7 @@ export class Dht extends Component {
           current value of Temprature:{" "}
           <span
             className={`common_currvalue_value ${
-              this.state.currTemprature < 24 || this.state.currTemprature > 48
+              this.state.currTemprature < 18 || this.state.currTemprature > 48
                 ? "wrong"
                 : ""
             }`}
@@ -138,10 +135,10 @@ export class Dht extends Component {
             {this.state.currTemprature}
           </span>
           <Fade right>
-          {this.state.currTemprature < 24 || this.state.currTemprature > 48 ? (
+          {this.state.currTemprature < 18 || this.state.currTemprature > 48 ? (
               <span
                 className={`${
-                  this.state.currTemprature < 24 ||
+                  this.state.currTemprature < 18 ||
                   this.state.currTemprature > 48
                     ? "wrong"
                     : ""

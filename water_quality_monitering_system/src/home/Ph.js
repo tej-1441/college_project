@@ -36,8 +36,8 @@ export class Ph extends Component {
           }
         }
         ph = +ph;
-        console.log(data);
-        console.log(ph);
+        // console.log(data);
+        // console.log(ph);
         this.setState({ currPh: ph });
 
         dps.push({ x: xVal, y: ph });

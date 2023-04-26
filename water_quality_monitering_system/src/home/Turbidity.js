@@ -35,7 +35,7 @@ export class Turbidity extends Component {
           }
         }
         Turbidity = +Turbidity;
-        console.log("turbidity", Turbidity);
+        // console.log("turbidity", Turbidity);
         this.setState({ currTurbidity: Turbidity });
         dps.push({ x: xVal, y: Turbidity });
       })
