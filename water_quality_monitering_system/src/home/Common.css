@@ -1,0 +1,22 @@
+.common{
+    margin-top: 100px;
+    /* background-color: red; */
+}
+.common_currvalue{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: larger;
+    font-weight: 600;
+    color: rgb(57, 57, 60);
+}
+.common_currvalue_value{
+    font-weight: bolder;
+    color: green;
+}
+.second{
+    margin-top: -30px;
+}
+.wrong{
+    color: red;
+}

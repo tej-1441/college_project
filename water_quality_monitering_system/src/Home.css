@@ -1,0 +1,15 @@
+.home_current{
+    padding: 10px;
+    margin-top: 100px;
+    text-align: center;
+    /* background-image: url("https://th.bing.com/th/id/OIP.LyI7PLgrwugAPFyYUJhqIAHaHc?pid=ImgDet&rs=1");
+    align-content: flex-start;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+.graph{
+
+}
+.xaxis{
+    margin-right:40px !important;
+}

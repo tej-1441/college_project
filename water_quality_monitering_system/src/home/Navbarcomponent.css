@@ -1,0 +1,16 @@
+.navbar{
+   padding:8px;
+}
+.navbar_inner{
+    display: flex;
+    flex-direction: row;
+}
+.navbar_brand{
+    margin-left: -50px;
+    font-size: 1.6rem;
+}
+.navbar_image{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
